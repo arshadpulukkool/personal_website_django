@@ -1,0 +1,43 @@
+.heading {
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-image:url('abbg.jpg');
+}
+
+#about h1 {
+    margin: 55px;
+    color: black;
+}
+
+.about {
+    display: flex;
+}
+
+
+.about img {
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+
+.name {
+    padding: 10px;
+
+}
+
+.name h2 {
+    font-size: 2rem;
+
+}
+
+.name p {
+    font-size: 1.2rem;
+}

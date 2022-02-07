@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reg.css' %}">
+</head>
+<body class="main">
+    <div class="messages">
+        {% for message in messages %}
+        <h4> {{message}}</h4>
+        {% endfor %}
+    </div>
+    <form action="signup" method="post">
+        {% csrf_token %}
+    <div class="box">
+        <h2 class="heading">Sign Up</h2>
+        <input type="text" placeholder="Name" class="inputbox1" name="name" required><br>
+        <input type="email" placeholder="E-mail" class="inputbox2" name="email" required><br>
+        <input type="password" placeholder="Password" class="inputbox3" name="pass1" required><br>
+        <input type="password" placeholder="Confirm Password" class="inputbox3" name="pass2" required><br>
+        <p class="checkbox1"><input type="checkbox" required>I read and agree to  <a href="terms"><b>Terms & Conditions</b></a> </p><br>
+        <input type="submit" value="CREATE ACCOUNT" class="btn"><br>
+        <p class="para">Already have an account?<a href="signin"><b>Sign in</b></a></p>
+
+    </div>
+    <br>
+    </form>
+    <div class="messages">
+        {% for message in messages %}
+        <h3> {{message}}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>
+            Website
+        </title>
+        <link rel="stylesheet" href="{% static 'css/website.css' %}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="education">Education</a></li>
+                <li><a href="aboutme">About Me</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="main" >
+                <h1 class="headings">HELLO , I'M<br>ARSHAD P</h1>
+                <form action="resume">
+                <button class="button" >
+                    RESUME
+                </button></form>
+            </div>
+        </section>
+    </body>
+</html>
